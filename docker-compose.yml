@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+
+  db:
+    image: postgres:latest
+    container_name: postgres-medods
+    volumes:
+    - postgres_data:/var/lib/postgresql/data
+    env_file:
+      - .env
+
+  medods-intern-app:
+    build: .
+    container_name: medods-intern-app 
+    env_file:
+      - .env
+    volumes:
+      - app-storage:/rails/storage
+    depends_on:
+      - db
+    ports:
+      - '3000:3000'
+    # entrypoint: [bin/entry]
+
+
+volumes:
+  postgres_data: {}
+  app-storage: {}

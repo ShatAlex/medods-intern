@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Hello there, <%= @patient.name %></h1>
+    <p>
+      There are new recommendations for your request: <%= @request_text %>.<br>
+    </p>
+    <p>
+      <ul>
+        <li><%= @recommend_text %></li>
+      </ul>
+    </p>
+    <p>Thank you for using, have a nice day!</p>
+  </body>
+</html>
