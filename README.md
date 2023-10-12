@@ -2,15 +2,14 @@
 
 ![Static Badge](https://img.shields.io/badge/ruby-v3.0.2-brown)
 ![Static Badge](https://img.shields.io/badge/rails-v7.1.0-orange)
-![Static Badge](https://img.shields.io/badge/pg-v1.5.4-green)   
-![Static Badge](https://img.shields.io/badge/puma-v5.0-blue)
+![Static Badge](https://img.shields.io/badge/pg-v1.5.4-green) ![Static Badge](https://img.shields.io/badge/puma-v5.0-blue)
 
 ## :sparkles: Описание проекта
 Микросервис на позволяющий пациентам отправлять запросы на консультацию с медицинскими специалистами и получать рекомендации. 
 
 А также реализована возможность получать и анализировать медицинские данные (моковые), полученные из внешних API: Аdviceslip и Faker.
 
-Кроме обязательного функционала, был реализован функционал оповещения о новых рекомендациях по электронной почте пациента. Написан DockerFile
+Кроме обязательного функционала, был реализован функционал оповещения о новых рекомендациях по электронной почте пациента. Написан DockerFile.
 ___
 
 ## :clipboard: Использование
